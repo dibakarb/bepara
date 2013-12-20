@@ -16,11 +16,11 @@
 /tmp
 
 # ignore other unneeded files.
-# database.yml
-# doc/
-# *.swp
-# *~
-# .project
-# .DS_Store
-# .idea
-# .secret
+database.yml
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
