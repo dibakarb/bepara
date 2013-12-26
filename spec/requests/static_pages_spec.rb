@@ -3,12 +3,17 @@ require 'spec_helper'
 describe "Static pages" do
   describe "Home page" do
 
-    it "should have the right title" do
+    it "should have the base title" do
       visit '/static_pages/home'
-      expect(page).to have_title('Bepara | Home')
+      expect(page).to have_title('Bepara')
     end
 
-    it "should have the content 'Bepaara'" do
+    it "should not have the extended title" do
+      visit '/static_pages/home'
+      expect(page).not_to have_title('| Home')
+    end
+
+    it "should have the content 'Bepara'" do
       visit '/static_pages/home'
       expect(page).to have_content('Bepara')
     end
