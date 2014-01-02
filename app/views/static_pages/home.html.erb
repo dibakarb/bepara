@@ -1,4 +1,12 @@
-<% provide(:title, '') %>
-<h1>Help</h1>
-<p>This is the Bepara home page</p>
+<div class="center hero-unit">
+	
+	<h1>Welcome to Bepara</h1>
 
+  	<h2>
+    		This is the home page for Bepara.
+  	</h2>
+
+  	<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+</div>
+
+<%= link_to image_tag("bepara.png", alt: "Rails"), 'http://parabepara.com/' %>
